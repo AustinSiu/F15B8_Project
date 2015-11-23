@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="15DB4A8A-3975-034A-1716-67D69830ED79" name="F15B8_Auth">
+<createdBy>siuau_000</createdBy>
+<createdTime>2015-11-18 01:48:45 UTC</createdTime>
+<ownerDesignName>conceptual</ownerDesignName>
+<engineerTo>
+<item key="56FA3931-D8AB-004D-7107-91EB258AFF93" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="auth_id" id="906F0120-C8A0-48C1-852A-1643EF81B27E">
+<createdBy>siuau_000</createdBy>
+<createdTime>2015-11-18 01:48:55 UTC</createdTime>
+<ownerDesignName>conceptual</ownerDesignName>
+<engineerTo>
+<item key="56FA3931-D8AB-004D-7107-91EB258AFF93" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="right" id="FCF23960-AF56-F94E-9182-008C4992390C">
+<createdBy>siuau_000</createdBy>
+<createdTime>2015-11-18 01:49:18 UTC</createdTime>
+<ownerDesignName>conceptual</ownerDesignName>
+<engineerTo>
+<item key="56FA3931-D8AB-004D-7107-91EB258AFF93" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="66AB00D1-57B0-EF4E-024E-E814E9FC263D" name="F15B8_Auth PK">
+<createdBy>siuau_000</createdBy>
+<createdTime>2015-11-18 01:49:11 UTC</createdTime>
+<ownerDesignName>conceptual</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="56FA3931-D8AB-004D-7107-91EB258AFF93" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>906F0120-C8A0-48C1-852A-1643EF81B27E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DBCB1F6E-DEB9-701A-3606-D509B23ACB8F" name="F15B8_Admin">
+<createdBy>siuau_000</createdBy>
+<createdTime>2015-11-21 03:03:10 UTC</createdTime>
+<generatorID>B06531F9-EF2F-E9FF-FE8C-004E0E417AA3</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="emp_id" id="3C2D04B8-9A89-577E-C6E1-A63C864F7607">
+<createdBy>siuau_000</createdBy>
+<createdTime>2015-11-21 03:03:10 UTC</createdTime>
+<generatorID>2FD5A8D4-D839-5A45-3440-974093BDC811</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C88C1EE0-B91C-C542-3ECD-54692B5BE5E0" referredColumn="3ACC75A2-7EE8-123A-0CF2-ECD915732C4B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3F07DC44-A936-86FB-6EC4-35C4CCA37882" name="F15B8_Admin_PK">
+<createdBy>siuau_000</createdBy>
+<createdTime>2015-11-21 03:03:10 UTC</createdTime>
+<generatorID>1F6695B8-7C5E-B71D-93A6-3119AD09BCAB</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C2D04B8-9A89-577E-C6E1-A63C864F7607"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="217B106D-5A71-BB69-5D08-2B5AB5865E00" name="F15B8_Admin_F15B8_emp_FK">
+<createdBy>siuau_000</createdBy>
+<createdTime>2015-11-21 03:03:10 UTC</createdTime>
+<generatorID>E845133A-59FD-1FA4-3471-1FBE9583AB4E</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C2D04B8-9A89-577E-C6E1-A63C864F7607"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="660990DA-8000-F65B-63FD-2EB39E5AA816" name="F15B8_Status">
+<createdBy>siuau_000</createdBy>
+<createdTime>2015-11-21 03:03:10 UTC</createdTime>
+<generatorID>5318FF9C-F80E-0804-6879-0D0C2AEA5688</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="status_id" id="A4AC2234-78FB-AAF3-4887-93339ED9A00B">
+<createdBy>siuau_000</createdBy>
+<createdTime>2015-11-21 03:03:10 UTC</createdTime>
+<generatorID>A488D3FB-A15C-7845-E86A-29D22E7F84BE</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="effective_date" id="36A0A52B-97AD-F5EB-793B-43EE6D743AFD">
+<createdBy>siuau_000</createdBy>
+<createdTime>2015-11-21 03:03:10 UTC</createdTime>
+<generatorID>BB81B5AE-0449-E517-9876-B7373CC569FE</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="entered_by_emp_id" id="D213D746-C474-8316-41FD-8954A8FFEE9D">
+<createdBy>siuau_000</createdBy>
+<createdTime>2015-11-21 03:03:10 UTC</createdTime>
+<generatorID>4425ABB9-4203-17C1-70FA-2F2A7638C867</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8934DEF5-AE18-FE63-DE47-BC80CBE436BB" name="F15B8_Status_PK">
+<createdBy>siuau_000</createdBy>
+<createdTime>2015-11-21 03:03:10 UTC</createdTime>
+<generatorID>17D7EDBA-0F92-6136-FFF7-EAF630885F4E</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4AC2234-78FB-AAF3-4887-93339ED9A00B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

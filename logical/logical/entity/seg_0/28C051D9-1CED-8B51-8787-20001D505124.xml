@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="28C051D9-1CED-8B51-8787-20001D505124" name="F15B8_r_e">
+<createdBy>siuau</createdBy>
+<createdTime>2015-11-19 01:16:23 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="56FA3931-D8AB-004D-7107-91EB258AFF93" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="contacts_id" id="DE66CB4B-F884-F7F8-9E95-BF1400CF8BED">
+<createdBy>siuau</createdBy>
+<createdTime>2015-11-19 01:36:45 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="56FA3931-D8AB-004D-7107-91EB258AFF93" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contact_role_code" id="4FAB0DAF-1961-7263-E856-F8E524C2440C">
+<createdBy>siuau</createdBy>
+<createdTime>2015-11-19 01:16:34 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="56FA3931-D8AB-004D-7107-91EB258AFF93" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="effective_date" id="41F8AA33-4FCA-B864-437E-3507B61FF4EB">
+<createdBy>siuau</createdBy>
+<createdTime>2015-11-19 01:17:09 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="56FA3931-D8AB-004D-7107-91EB258AFF93" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comments" id="D97D5543-AAD6-F8CC-6FD0-726C6C108A57">
+<createdBy>siuau</createdBy>
+<createdTime>2015-11-19 01:17:19 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="56FA3931-D8AB-004D-7107-91EB258AFF93" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="A9ADDC7A-2D11-9FF3-F766-0DDB4B8FDEF4">
+<createdBy>siuau</createdBy>
+<createdTime>2015-11-19 01:43:31 UTC</createdTime>
+<generatorID>B92D1107-357D-C9E7-BEA1-D679DB3DC33B</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="56FA3931-D8AB-004D-7107-91EB258AFF93" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>81E9C7B3-7347-D679-34FC-85F26BEF5F3E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_id" id="3EB2AB64-ADCD-1EA3-064D-5D50A9681CE6">
+<createdBy>siuau</createdBy>
+<createdTime>2015-11-19 01:43:48 UTC</createdTime>
+<generatorID>B4A90FAD-0693-9D59-6735-C528EE04559D</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="56FA3931-D8AB-004D-7107-91EB258AFF93" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2FD5A8D4-D839-5A45-3440-974093BDC811</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E16A0E0A-4919-0637-CD1D-BE1F231AAFA1" name="F15B8_contacts PK">
+<createdBy>siuau</createdBy>
+<createdTime>2015-11-19 01:37:02 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="56FA3931-D8AB-004D-7107-91EB258AFF93" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DE66CB4B-F884-F7F8-9E95-BF1400CF8BED</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

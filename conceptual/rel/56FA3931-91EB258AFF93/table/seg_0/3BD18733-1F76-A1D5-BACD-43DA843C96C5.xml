@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3BD18733-1F76-A1D5-BACD-43DA843C96C5" name="F15B8_Hist">
+<createdBy>siuau_000</createdBy>
+<createdTime>2015-11-21 03:03:10 UTC</createdTime>
+<generatorID>09B97326-4091-80B2-98B2-7EC063DF7668</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="hist_id" id="DFC99E25-6243-DF03-6DB8-9750086D9F3D">
+<createdBy>siuau_000</createdBy>
+<createdTime>2015-11-21 03:03:10 UTC</createdTime>
+<generatorID>36085C03-8831-247B-AF05-1FC7954680F8</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15B8_rfe_rfe_id" id="6E969A1B-4C13-D2FF-7A38-F19C203E0860">
+<createdBy>siuau_000</createdBy>
+<createdTime>2015-11-21 03:03:10 UTC</createdTime>
+<generatorID>804BB83A-B8AC-FE69-1DFA-4A27B5F687FD</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="408FFBB9-C361-0D17-E968-481BE5ACA0F7" referredColumn="441B890E-4861-D190-92A9-CBA6DAE761F3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F2FFFF68-4428-740D-B096-7B012D6221C3" name="F15B8_Hist_PK">
+<createdBy>siuau_000</createdBy>
+<createdTime>2015-11-21 03:03:10 UTC</createdTime>
+<generatorID>AEE14B80-0C98-FB3A-4407-26F59836DDD0</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFC99E25-6243-DF03-6DB8-9750086D9F3D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="128CDE41-2182-12EE-9785-115F63C82903" name="F15B8_Hist_F15B8_rfe_FK">
+<createdBy>siuau_000</createdBy>
+<createdTime>2015-11-21 03:03:10 UTC</createdTime>
+<generatorID>2BE9E2C5-30E2-B713-944E-2AC19AA8E302</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E969A1B-4C13-D2FF-7A38-F19C203E0860"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

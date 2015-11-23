@@ -1,0 +1,220 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="31480F8E-9E4A-7F9F-839D-E4BE98BED6B1" name="F15B8_emp">
+<createdBy>siuau</createdBy>
+<createdTime>2015-11-19 18:59:24 UTC</createdTime>
+<generatorID>6F1427F3-E005-E56A-990D-C42DEDAE5348</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="emp_id" id="B74966E1-4380-A185-03C5-EF5DDA04BED9">
+<createdBy>siuau</createdBy>
+<createdTime>2015-11-19 18:59:24 UTC</createdTime>
+<generatorID>2FD5A8D4-D839-5A45-3440-974093BDC811</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_email" id="CC43072C-845B-660F-E7BD-B4C70C2E2789">
+<createdBy>siuau</createdBy>
+<createdTime>2015-11-19 18:59:24 UTC</createdTime>
+<generatorID>1E40F510-D9BE-E62B-BE53-F266AF3835FE</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_name" id="CB25C84F-51DE-F7C2-BE72-3BB3E0C75BFD">
+<createdBy>siuau</createdBy>
+<createdTime>2015-11-19 18:59:24 UTC</createdTime>
+<generatorID>44449F46-9FE0-D7B4-601C-1E461BD00F6D</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_office" id="C4F578FB-1186-6CE0-C7E0-1D494CA5BCD1">
+<createdBy>siuau</createdBy>
+<createdTime>2015-11-19 18:59:24 UTC</createdTime>
+<generatorID>A610BF82-8D2F-56CB-1221-8145D6A7A1FE</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_phone" id="5665D165-ABD6-85C0-6617-9B515057D8D3">
+<createdBy>siuau</createdBy>
+<createdTime>2015-11-19 18:59:24 UTC</createdTime>
+<generatorID>FE665524-EAC9-916E-9EBA-CA64CEA1DDA1</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_status" id="DD0CABD1-A85A-F7C4-92DF-E8A3DF302B81">
+<createdBy>siuau</createdBy>
+<createdTime>2015-11-19 18:59:24 UTC</createdTime>
+<generatorID>E8A02F33-2A2B-E2BA-6CC1-391FC10026C0</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_eff_date" id="1B5C7A83-61CB-1D90-6977-DA50AEFCAAC3">
+<createdBy>siuau</createdBy>
+<createdTime>2015-11-19 18:59:24 UTC</createdTime>
+<generatorID>380819D7-A884-4D2E-8613-A421A73EF543</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15B8_lab_lab_id" id="E124958B-EA77-64D3-B5E7-C12FA7C473AD">
+<createdBy>siuau</createdBy>
+<createdTime>2015-11-19 18:59:24 UTC</createdTime>
+<generatorID>B8BB9507-F4DF-505D-EB06-5053DF0AF5E7</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3EAE7B37-4812-A27D-B283-2AB289C5B4E1" referredColumn="5D6D5BFB-2E5C-ECF8-FC4B-11012BCCDC1B"/>
+</associations>
+</Column>
+<Column name="F15B8_Auth_auth_id" id="54141223-6806-9899-FEC1-62442B2B853B">
+<createdBy>siuau</createdBy>
+<createdTime>2015-11-19 18:59:24 UTC</createdTime>
+<generatorID>5C524CFF-6DAD-5AC9-473F-725CF7281332</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1BC3A278-4C91-D586-B0F4-7685DA3A887B" referredColumn="DD64D012-B192-B23F-9777-5FE1728562EB"/>
+</associations>
+</Column>
+<Column name="system_admin_flag" id="5349D9A2-C520-61DD-DE74-8530E816189B">
+<createdBy>siuau_000</createdBy>
+<createdTime>2015-11-21 21:56:58 UTC</createdTime>
+<generatorID>02F5C7E6-8CE9-A674-BF81-75732A06EF5C</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lab_director_flag" id="4BE371A3-45A4-A52B-9E28-2296F5190297">
+<createdBy>siuau_000</createdBy>
+<createdTime>2015-11-21 21:56:58 UTC</createdTime>
+<generatorID>152EAA38-17CC-DB2B-E3E6-D1839316BE7A</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="exec_director_flag" id="CD633D69-392E-33EB-AB30-8359A5D2360F">
+<createdBy>siuau_000</createdBy>
+<createdTime>2015-11-21 21:56:58 UTC</createdTime>
+<generatorID>6ABA0636-6D82-1346-A1FE-7C49AE1AB28B</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="chairperson_flag" id="6C84C231-21BB-D1D0-40B0-C56C1DD3FC17">
+<createdBy>siuau_000</createdBy>
+<createdTime>2015-11-21 21:56:58 UTC</createdTime>
+<generatorID>7178729A-8378-F0A9-78D6-271CF19C7D84</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6D6F1E30-0E87-F7A8-BB4A-D1A890188F88" name="F15B8_emp_PK">
+<createdBy>siuau</createdBy>
+<createdTime>2015-11-19 18:59:24 UTC</createdTime>
+<generatorID>1F6695B8-7C5E-B71D-93A6-3119AD09BCAB</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B74966E1-4380-A185-03C5-EF5DDA04BED9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1B703B79-E314-1D25-FE37-2CCC0CA52EC0" name="F15B8_emp_F15B8_Auth_FK">
+<createdBy>siuau</createdBy>
+<createdTime>2015-11-19 18:59:24 UTC</createdTime>
+<generatorID>CA5E4EB7-109E-53E2-CC91-4EDC903F96F6</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54141223-6806-9899-FEC1-62442B2B853B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D1697B73-A155-F13E-0C3D-A280DF9FA175" name="F15B8_emp_F15B8_lab_FK">
+<createdBy>siuau_000</createdBy>
+<createdTime>2015-11-23 00:30:36 UTC</createdTime>
+<generatorID>A29BADF7-672B-C7A5-ACD4-4D134F404F9A</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E124958B-EA77-64D3-B5E7-C12FA7C473AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

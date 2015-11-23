@@ -1,0 +1,33 @@
+# Change the followin oracle account id and password to your oracle account id and password. Also, change A0 to your group's number but don't use F15 because it will make some internal names be too long.
+conn = connectTo 'jdbc:oracle:thin:@sayonara.microlab.cs.utexas.edu:1521:orcl' 'C##cs347_ajs4595' 'orcl_ajs4595' 'rdf_mode' 'B8';
+
+Neo4j on conn "CREATE (:site { SITENO : 7369, SNAME : 'THEPHYSICSCLASSROOM', SUBJECT : 'SCIENCE', SPECIALIZATION : 'PHYSICS', URL : 'http://www.physicsclassroom.com/'})"
+Neo4j on conn "CREATE (:site { SITENO : 7499, SNAME : 'KHANACADEMY', SUBJECT : 'SCIENCE', SPECIALIZATION : 'PHYSICS', URL : 'https://www.khanacademy.org/science/physics'})"
+Neo4j on conn "CREATE (:site { SITENO : 7521, SNAME : 'PHYSICSTUTORIALS', SUBJECT : 'SCIENCE', SPECIALIZATION : 'PHYSICS', URL : 'http://www.physicstutorials.org/pt/index.php'})"
+Neo4j on conn "CREATE (:site { SITENO : 7566, SNAME : 'BIOLOGYONLINE', SUBJECT : 'SCIENCE', SPECIALIZATION : 'BIOLOGY', URL : 'http://www.biology-online.org/kb/tutorials.html'})"
+Neo4j on conn "CREATE (:site { SITENO : 7654, SNAME : 'KHANACADEMY', SUBJECT : 'SCIENCE', SPECIALIZATION : 'BIOLOGY', URL : 'https://www.khanacademy.org/science/biology'})"
+Neo4j on conn "CREATE (:site { SITENO : 7211, SNAME : 'SOPHIA', SUBJECT : 'SCIENCE', SPECIALIZATION : 'BIOLOGY', URL : 'https://www.sophia.org/subjects/biology'})"
+Neo4j on conn "CREATE (:site { SITENO : 7782, SNAME : 'KHANACADEMY', SUBJECT : 'SCIENCE', SPECIALIZATION : 'CHEMISTRY', URL : 'https://www.khanacademy.org/science/chemistry'})"
+Neo4j on conn "CREATE (:site { SITENO : 7666, SNAME : 'GENERALCHEMISTRYONLINE', SUBJECT : 'SCIENCE', SPECIALIZATION : 'CHEMISTRY', URL : 'http://antoine.frostburg.edu/chem/senese/101/tutorials/'})"
+Neo4j on conn "CREATE (:site { SITENO : 7754, SNAME : 'KHANACADEMY', SUBJECT : 'MATH', SPECIALIZATION : 'GEOMETRY', URL : 'https://www.khanacademy.org/math/geometry'})"
+Neo4j on conn "CREATE (:site { SITENO : 7882, SNAME : 'ANALYZEMATH', SUBJECT : 'MATH', SPECIALIZATION : 'GEOMETRY', URL : 'http://www.analyzemath.com/geometry.html'})"
+Neo4j on conn "CREATE (:site { SITENO : 6369, SNAME : 'KHANACADEMY', SUBJECT : 'MATH', SPECIALIZATION : 'ALGEBRA', URL : 'https://www.khanacademy.org/math/algebra'})"
+Neo4j on conn "CREATE (:site { SITENO : 6499, SNAME : 'COOLMATH', SUBJECT : 'MATH', SPECIALIZATION : 'ALGEBRA', URL : 'http://www.coolmath.com/algebra'})"
+Neo4j on conn "CREATE (:site { SITENO : 6599, SNAME : 'CALCULUSHELP', SUBJECT : 'MATH', SPECIALIZATION : 'CALCULUS', URL : 'http://www.calculus-help.com/tutorials'})"
+Neo4j on conn "CREATE (:site { SITENO : 6789, SNAME : 'PAULSCALCULUSNOTES', SUBJECT : 'MATH', SPECIALIZATION : 'CALCULUS', URL : 'http://tutorial.math.lamar.edu/Classes/CalcI/CalcI.aspx'})"
+Neo4j on conn "CREATE (:site { SITENO : 6599, SNAME : 'ONLINECSMODULES', SUBJECT : 'COMPUTERSCIENCE', SPECIALIZATION : 'DATASTRUCTURES', URL : 'http://courses.cs.vt.edu/csonline/DataStructures/Lessons/'})"
+Neo4j on conn "CREATE (:site { SITENO : 6596, SNAME : 'TOPCODER', SUBJECT : 'COMPUTERSCIENCE', SPECIALIZATION : 'ALGORITHMS', URL : 'https://www.topcoder.com/community/data-science/data-science-tutorials/'})"
+Neo4j on conn "CREATE (:site { SITENO : 6400, SNAME : 'CALCULUSORG', SUBJECT : 'MATH', SPECIALIZATION : 'CALCULUS', URL : 'http://www.calculus.org/'})"
+Neo4j on conn "CREATE (:site { SITENO : 6400, SNAME : 'SAGEMATH', SUBJECT : 'MATH', SPECIALIZATION : 'CALCULUS', URL : 'http://www.sagemath.org/calctut/'})"
+
+Neo4j on conn "CREATE (:subj { SUBJNO : 10, SNAME : 'SCIENCE' })"
+Neo4j on conn "CREATE (:subj { SUBJNO : 20, SNAME : 'MATH' })"
+Neo4j on conn "CREATE (:subj { SUBJNO : 30, SNAME : 'COMPUTERSCIENCE' })"
+
+Neo4j on conn "MATCH (a:site),(b:subj) WHERE a.SUBJECT = 10 AND b.SUBJNO = 10 CREATE (a)<-[:SITE]-(b)"
+Neo4j on conn "MATCH (a:site),(b:subj) WHERE a.SUBJECT = 20 AND b.SUBJNO = 20 CREATE (a)<-[:SITE]-(b)"
+Neo4j on conn "MATCH (a:site),(b:subj) WHERE a.SUBJECT = 30 AND b.SUBJNO = 30 CREATE (a)<-[:SITE]-(b)"
+
+Neo4j on conn "MATCH (a:site),(b:subj) WHERE a.SUBJECT = 10 AND b.SUBJNO = 10 CREATE (a)-[:SUBJECT]->(b)"
+Neo4j on conn "MATCH (a:site),(b:subj) WHERE a.SUBJECT = 20 AND b.SUBJNO = 20 CREATE (a)-[:SUBJECT]->(b)"
+Neo4j on conn "MATCH (a:site),(b:subj) WHERE a.SUBJECT = 30 AND b.SUBJNO = 30 CREATE (a)-[:SUBJECT]->(b)"

@@ -1,0 +1,110 @@
+-- Truncate each of the sample data tables using the following statement:
+-- truncate table table_name1; -- for example - truncate table dept;
+truncate table F15B8_doc;
+truncate table F15B8_comment;
+truncate table F15B8_Auth;
+truncate table F15B8_rfe;
+truncate table F15B8_approvers;
+truncate table F15B8_emp;
+truncate table F15B8_r_e;
+truncate table F15B8_Status;
+truncate table F15B8_r_t;
+truncate table F15B8_task;
+truncate table F15B8_Hist;
+truncate table F15B8_lab;
+
+-- Disable the PK triggers on the sample data tables using the following statement:
+--alter trigger trigger_name1 disable; -- for example - alter trigger DEPT_VIEW_TRIGGER disable;
+
+alter trigger F15B8_ADMIN_AUD_TRIG disable;
+alter trigger F15B8_ADMIN_PK_TRIG disable;
+alter trigger F15B8_APPROVERS_AUD_TRIG disable;
+alter trigger F15B8_APPROVERS_PK_TRIG disable;
+alter trigger F15B8_AUTH_AUD_TRIG disable;
+alter trigger F15B8_AUTH_PK_TRIG disable;
+alter trigger F15B8_CHAIR_AUD_TRIG disable;
+alter trigger F15B8_CHAIR_PK_TRIG disable;
+alter trigger F15B8_COMMENT_AUD_TRIG disable;
+alter trigger F15B8_COMMENT_INSERT disable;
+alter trigger F15B8_COMMENT_PK_TRIG disable;
+alter trigger F15B8_DOCUMENT_AUD_TRIG disable;
+alter trigger F15B8_DOCUMENT_PK_TRIG disable;
+alter trigger F15B8_DOC_AUD_TRIG disable;
+alter trigger F15B8_DOC_PK_TRIG disable;
+alter trigger F15B8_EMP_AUD_TRIG disable;
+alter trigger F15B8_EMP_PK_TRIG disable;
+alter trigger F15B8_EXECDIR_AUD_TRIG disable;
+alter trigger F15B8_EXECDIR_PK_TRIG disable;
+alter trigger F15B8_HIST_AUD_TRIG disable;
+alter trigger F15B8_HIST_PK_TRIG disable;
+alter trigger F15B8_LABDIR_AUD_TRIG disable;
+alter trigger F15B8_LABDIR_PK_TRIG disable;
+alter trigger F15B8_LAB_AUD_TRIG disable;
+alter trigger F15B8_LAB_PK_TRIG disable;
+alter trigger F15B8_RFE_ADD_APPROVAL disable;
+alter trigger F15B8_RFE_AUD_TRIG disable;
+alter trigger F15B8_RFE_EDIT_T disable;
+alter trigger F15B8_RFE_PK_TRIG disable;
+alter trigger F15B8_R_E_AUD_TRIG disable;
+alter trigger F15B8_R_E_PK_TRIG disable;
+alter trigger F15B8_R_T_AUD_TRIG disable;
+alter trigger F15B8_R_T_PK_TRIG disable;
+alter trigger F15B8_STATUS_AUD_TRIG disable;
+alter trigger F15B8_STATUS_PK_TRIG disable;
+alter trigger F15B8_TASK_AUD_TRIG disable;
+alter trigger F15B8_TASK_PK_TRIG disable;
+
+-- Put all of the sample data INSERT statements here. Be sure to use PK and FK values that
+-- are < 100 so that they won't be reapeated by the PK triggers when they are re-enabled.
+-- INSERT into table-name values(data1,data2,..)
+INSERT into F15B8_rfe values(1, 'Want to run the test', NULL, NULL, 1, 1);
+INSERT into F15B8_emp values(1, 'jonsnow@gmail.com', 'Jon Snow', 'Boston', '15212322', '1', '2015-12-13', '1', '0', '0', '0', 1, 1);
+INSERT into F15B8_Status values(1, '2015-10-13', 1, 'Entered');
+INSERT into F15B8_lab values(1, 'Prime');
+INSERT into F15B8_Auth values(1, 'Approve');
+INSERT into F15B8_rfe values(2, 'Want to run another test', NULL, NULL, 2, 2);
+INSERT into F15B8_emp values(2, 'jeremyron@gmail.com', 'Jeremy Ron', 'Dallas', '15212522', '2', '2015-10-13', '0', '1', '0', '0', 2, 2);
+INSERT into F15B8_Status values(2, '2015-10-13', 2, 'Entered');
+INSERT into F15B8_lab values(2, 'Omega');
+INSERT into F15B8_Auth values(1, 'Approve');
+
+-- Enable the PK triggers on the sample data tables using the following statement:
+-- alter trigger trigger_name1 enable; -- for example - alter trigger DEPT_VIEW_TRIGGER enable;
+
+alter trigger F15B8_ADMIN_AUD_TRIG enable;
+alter trigger F15B8_ADMIN_PK_TRIG enable;
+alter trigger F15B8_APPROVERS_AUD_TRIG enable;
+alter trigger F15B8_APPROVERS_PK_TRIG enable;
+alter trigger F15B8_AUTH_AUD_TRIG enable;
+alter trigger F15B8_AUTH_PK_TRIG enable;
+alter trigger F15B8_CHAIR_AUD_TRIG enable;
+alter trigger F15B8_CHAIR_PK_TRIG enable;
+alter trigger F15B8_COMMENT_AUD_TRIG enable;
+alter trigger F15B8_COMMENT_INSERT enable;
+alter trigger F15B8_COMMENT_PK_TRIG enable;
+alter trigger F15B8_DOCUMENT_AUD_TRIG enable;
+alter trigger F15B8_DOCUMENT_PK_TRIG enable;
+alter trigger F15B8_DOC_AUD_TRIG enable;
+alter trigger F15B8_DOC_PK_TRIG enable;
+alter trigger F15B8_EMP_AUD_TRIG enable;
+alter trigger F15B8_EMP_PK_TRIG enable;
+alter trigger F15B8_EXECDIR_AUD_TRIG enable;
+alter trigger F15B8_EXECDIR_PK_TRIG enable;
+alter trigger F15B8_HIST_AUD_TRIG enable;
+alter trigger F15B8_HIST_PK_TRIG enable;
+alter trigger F15B8_LABDIR_AUD_TRIG enable;
+alter trigger F15B8_LABDIR_PK_TRIG enable;
+alter trigger F15B8_LAB_AUD_TRIG enable;
+alter trigger F15B8_LAB_PK_TRIG enable;
+alter trigger F15B8_RFE_ADD_APPROVAL enable;
+alter trigger F15B8_RFE_AUD_TRIG enable;
+alter trigger F15B8_RFE_EDIT_T enable;
+alter trigger F15B8_RFE_PK_TRIG enable;
+alter trigger F15B8_R_E_AUD_TRIG enable;
+alter trigger F15B8_R_E_PK_TRIG enable;
+alter trigger F15B8_R_T_AUD_TRIG enable;
+alter trigger F15B8_R_T_PK_TRIG enable;
+alter trigger F15B8_STATUS_AUD_TRIG enable;
+alter trigger F15B8_STATUS_PK_TRIG enable;
+alter trigger F15B8_TASK_AUD_TRIG enable;
+alter trigger F15B8_TASK_PK_TRIG enable;

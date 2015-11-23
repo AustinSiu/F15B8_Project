@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B9406026-1561-8455-6E7F-62B0E86516FB" name="F15B8_approvers">
+<createdBy>siuau</createdBy>
+<createdTime>2015-11-19 18:59:24 UTC</createdTime>
+<generatorID>0E5C52B7-0E9E-F5D7-8CD5-CD2E33B563EA</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="approver_id" id="9451EACB-DAA7-9DFA-6BE1-15B9C78ADAC6">
+<createdBy>siuau</createdBy>
+<createdTime>2015-11-19 18:59:24 UTC</createdTime>
+<generatorID>3F11C920-C896-55B9-4A1C-6ABFDD53EB3A</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15B8_rfe_rfe_id" id="7EF07247-599C-D0B8-8503-D045152DA263">
+<createdBy>siuau</createdBy>
+<createdTime>2015-11-19 18:59:24 UTC</createdTime>
+<generatorID>B9A41509-00D3-72D8-11E2-46EB3366E573</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FCF4BC87-84B4-83C6-A1F3-08E7CC4D7CBA" referredColumn="E0B755F9-06D9-2DFA-D9A8-58F85124987E"/>
+</associations>
+</Column>
+<Column name="F15B8_emp_emp_id" id="B157690A-6746-4F4E-BC83-3CC7645B7C48">
+<createdBy>siuau</createdBy>
+<createdTime>2015-11-19 18:59:24 UTC</createdTime>
+<generatorID>640305E4-BAFA-2410-C47B-E09F5599A7E8</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DE6C01BF-6959-37FA-1D5D-365D20D2DBAF" referredColumn="B74966E1-4380-A185-03C5-EF5DDA04BED9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ACDBC0E9-6DE4-AE0D-E9A3-2048F0037A41" name="F15B8_approvers_PK">
+<createdBy>siuau</createdBy>
+<createdTime>2015-11-19 18:59:24 UTC</createdTime>
+<generatorID>E75C1B14-C24F-6F4B-8CF9-69F909A3E489</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9451EACB-DAA7-9DFA-6BE1-15B9C78ADAC6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="021BEE82-53E2-E22F-1499-96111F9199AC" name="F15B8_approvers_F15B8_rfe_FK">
+<createdBy>siuau</createdBy>
+<createdTime>2015-11-19 18:59:24 UTC</createdTime>
+<generatorID>D121B745-8DE4-49D9-5E7F-308AA7C91B62</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EF07247-599C-D0B8-8503-D045152DA263"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03CECB85-E03A-85A1-BFC5-A13FE10E4BB7" name="F15B8_approvers_F15B8_emp_FK">
+<createdBy>siuau_000</createdBy>
+<createdTime>2015-11-23 00:30:36 UTC</createdTime>
+<generatorID>07BFF36C-9938-6108-9651-4DCFEED9630A</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B157690A-6746-4F4E-BC83-3CC7645B7C48"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
